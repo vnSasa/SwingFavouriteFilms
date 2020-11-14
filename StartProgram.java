@@ -24,7 +24,7 @@ public class StartProgram {
     public StartProgram()
     {
     	JFrame.setDefaultLookAndFeelDecorated(true);
-    	JFrame frame = new JFrame("FavouriteFilms Старт") {} ;
+    	JFrame frame = new JFrame("FavouriteFilms РЎС‚Р°СЂС‚") {} ;
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		Toolkit tool = Toolkit.getDefaultToolkit();
@@ -40,12 +40,12 @@ public class StartProgram {
 		
 		pan.setLayout(new GridBagLayout());
 		
-		JLabel lab1 = new JLabel("ВІТАЄМО ВАС У FavouriteFilms!!!");
+		JLabel lab1 = new JLabel("Р’Р†РўРђР„РњРћ Р’РђРЎ РЈ FavouriteFilms!!!");
 		pan.add(lab1, new GridBagConstraints(0, 0, 2, 1, 0.0, 0.0, 
 				GridBagConstraints.CENTER, GridBagConstraints.PAGE_START,
 				new Insets(2,2,2,2), 0,0));
 		lab1.setFont(font);
-		JLabel lab2 = new JLabel("Для продовження роботи потрібно авторизуватися");
+		JLabel lab2 = new JLabel("Р”Р»СЏ РїСЂРѕРґРѕРІР¶РµРЅРЅСЏ СЂРѕР±РѕС‚Рё РїРѕС‚СЂС–Р±РЅРѕ Р°РІС‚РѕСЂРёР·СѓРІР°С‚РёСЃСЏ");
 		pan.add(lab2, new GridBagConstraints(0, 1, 2, 1, 0.0, 0.0, 
 				GridBagConstraints.CENTER, GridBagConstraints.HORIZONTAL,
 				new Insets(2,2,2,2), 0,0));
@@ -55,7 +55,7 @@ public class StartProgram {
 				GridBagConstraints.CENTER, GridBagConstraints.HORIZONTAL,
 				new Insets(2,2,2,2), 0,0));
 		
-		JLabel log = new JLabel("ЛОГІН:");
+		JLabel log = new JLabel("Р›РћР“Р†Рќ:");
 		pan.add(log, new GridBagConstraints(0, 3, 1, 1, 0.0, 0.0, 
 				GridBagConstraints.NORTH, GridBagConstraints.HORIZONTAL,
 				new Insets(2,2,2,2), 0,0));
@@ -63,7 +63,7 @@ public class StartProgram {
 		pan.add(name, new GridBagConstraints(1, 3, 1, 1, 0.0, 0.0, 
 				GridBagConstraints.NORTH, GridBagConstraints.HORIZONTAL,
 				new Insets(2,2,2,2), 0,0));
-		JLabel pass = new JLabel("ПАРОЛЬ:");
+		JLabel pass = new JLabel("РџРђР РћР›Р¬:");
 		pan.add(pass, new GridBagConstraints(0, 4, 1, 1, 0.0, 0.0, 
 				GridBagConstraints.NORTH, GridBagConstraints.HORIZONTAL,
 				new Insets(2,2,2,2), 0,0));
@@ -72,11 +72,11 @@ public class StartProgram {
 				GridBagConstraints.NORTH, GridBagConstraints.HORIZONTAL,
 				new Insets(2,2,2,2), 0,0));
 		
-		JButton but3 = new JButton("Увійти");
+		JButton but3 = new JButton("РЈРІС–Р№С‚Рё");
 		pan.add(but3, new GridBagConstraints(0, 5, 1, 1, 0.0, 0.0, 
 				GridBagConstraints.NORTH, GridBagConstraints.HORIZONTAL,
 				new Insets(2,2,2,2), 0,0));
-		JButton but4 = new JButton("Зареєструватися");
+		JButton but4 = new JButton("Р—Р°СЂРµС”СЃС‚СЂСѓРІР°С‚РёСЃСЏ");
 		pan.add(but4, new GridBagConstraints(1, 5, 1, 1, 0.0, 0.0, 
 				GridBagConstraints.NORTH, GridBagConstraints.HORIZONTAL,
 				new Insets(2,2,2,2), 0,0));
@@ -119,12 +119,12 @@ but3.addActionListener(new ActionListener() {
 		                        
 		                        if (result1 == true || result2 == true) {
 		                        	
-		                        JOptionPane.showMessageDialog(but3, "Авторизація пройшла успішно!!!");
+		                        JOptionPane.showMessageDialog(but3, "РђРІС‚РѕСЂРёР·Р°С†С–СЏ РїСЂРѕР№С€Р»Р° СѓСЃРїС–С€РЅРѕ!!!");
 		        				frame.setVisible(false);
 		        				
 		        				new ChoiceMenu();
 		                        } else {
-		                        	JOptionPane.showMessageDialog(but3, "Невірний логін або пароль!!! Спробуйте ще!!!");
+		                        	JOptionPane.showMessageDialog(but3, "РќРµРІС–СЂРЅРёР№ Р»РѕРіС–РЅ Р°Р±Рѕ РїР°СЂРѕР»СЊ!!! РЎРїСЂРѕР±СѓР№С‚Рµ С‰Рµ!!!");
 		                        }
 		                        }
 		                     }
