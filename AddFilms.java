@@ -20,9 +20,9 @@ import javax.swing.JTextField;
 
 public class AddFilms {
 
-	String[] menuG = {"", "Анімація","Екшн","Бойовик","Драма","Мелодрама","Комедія","Жахи","Фантастика","Триллер","Детектив","Пригоди","Історичний","Документальний","Дитячий","Сімейний","Фентезі","Спорт","інший жанр"};
-	String[] countryM = {"","США", "Україна", "Росія","Англія","Австралія","Канада","Франція","Німеччина","Іспанія","Італія","Туреччина","Латинська Америка","Швеція","Фінляндія","Польща","Індія","Китай","Японія","інша країна"};
-	String[] yearsM = {"","раніше","1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990",
+	String[] menuG = {"", "РђРЅС–РјР°С†С–СЏ","Р•РєС€РЅ","Р‘РѕР№РѕРІРёРє","Р”СЂР°РјР°","РњРµР»РѕРґСЂР°РјР°","РљРѕРјРµРґС–СЏ","Р–Р°С…Рё","Р¤Р°РЅС‚Р°СЃС‚РёРєР°","РўСЂРёР»Р»РµСЂ","Р”РµС‚РµРєС‚РёРІ","РџСЂРёРіРѕРґРё","Р†СЃС‚РѕСЂРёС‡РЅРёР№","Р”РѕРєСѓРјРµРЅС‚Р°Р»СЊРЅРёР№","Р”РёС‚СЏС‡РёР№","РЎС–РјРµР№РЅРёР№","Р¤РµРЅС‚РµР·С–","РЎРїРѕСЂС‚","С–РЅС€РёР№ Р¶Р°РЅСЂ"};
+	String[] countryM = {"","РЎРЁРђ", "РЈРєСЂР°С—РЅР°", "Р РѕСЃС–СЏ","РђРЅРіР»С–СЏ","РђРІСЃС‚СЂР°Р»С–СЏ","РљР°РЅР°РґР°","Р¤СЂР°РЅС†С–СЏ","РќС–РјРµС‡С‡РёРЅР°","Р†СЃРїР°РЅС–СЏ","Р†С‚Р°Р»С–СЏ","РўСѓСЂРµС‡С‡РёРЅР°","Р›Р°С‚РёРЅСЃСЊРєР° РђРјРµСЂРёРєР°","РЁРІРµС†С–СЏ","Р¤С–РЅР»СЏРЅРґС–СЏ","РџРѕР»СЊС‰Р°","Р†РЅРґС–СЏ","РљРёС‚Р°Р№","РЇРїРѕРЅС–СЏ","С–РЅС€Р° РєСЂР°С—РЅР°"};
+	String[] yearsM = {"","СЂР°РЅС–С€Рµ","1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990",
 			"1991","1992","1993","1994","1995","1996","1997","1998","1999","2000",
 			"2001","2002","2003","2004","2005","2006","2007","2008","2009","2010",
 			"2011","2012","2013","2014","2015","2016","2017","2018","2019","2020"};
@@ -36,12 +36,12 @@ public class AddFilms {
 		Toolkit tool = Toolkit.getDefaultToolkit();
 		Dimension dim = tool.getScreenSize();
 		frame.setBounds(dim.width/2 - 250, dim.height/2 - 150, 500, 300);
-		frame.setTitle("FavouriteFilms Меню Додавання");
+		frame.setTitle("FavouriteFilms РњРµРЅСЋ Р”РѕРґР°РІР°РЅРЅСЏ");
 		JPanel pan = new JPanel();
 		frame.add(pan);
 		pan.setLayout(new GridBagLayout());
 		
-		JLabel nameFilm = new JLabel("Назва фільму");
+		JLabel nameFilm = new JLabel("РќР°Р·РІР° С„С–Р»СЊРјСѓ");
 		pan.add(nameFilm, new GridBagConstraints(0, 0, 1, 1, 0.0, 0.0, 
 				GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 				new Insets(2,2,2,2), 0,0));
@@ -50,7 +50,7 @@ public class AddFilms {
 				GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 				new Insets(2,2,2,2), 0,0));
 		
-		JLabel genreFilm = new JLabel("Жанр фільму");
+		JLabel genreFilm = new JLabel("Р–Р°РЅСЂ С„С–Р»СЊРјСѓ");
 		pan.add(genreFilm, new GridBagConstraints(0, 1, 1, 1, 0.0, 0.0, 
 				GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 				new Insets(2,2,2,2), 0,0));
@@ -63,7 +63,7 @@ public class AddFilms {
 				GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 				new Insets(2,2,2,2), 0,0));
 		
-		JLabel alternativeGenreFilm = new JLabel("Додатковий жанр фільму");
+		JLabel alternativeGenreFilm = new JLabel("Р”РѕРґР°С‚РєРѕРІРёР№ Р¶Р°РЅСЂ С„С–Р»СЊРјСѓ");
 		pan.add(alternativeGenreFilm, new GridBagConstraints(0, 2, 1, 1, 0.0, 0.0, 
 				GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 				new Insets(2,2,2,2), 0,0));
@@ -76,7 +76,7 @@ public class AddFilms {
 				GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 				new Insets(2,2,2,2), 0,0));
 		
-		JLabel countryFilm = new JLabel("Країна виробник");
+		JLabel countryFilm = new JLabel("РљСЂР°С—РЅР° РІРёСЂРѕР±РЅРёРє");
 		pan.add(countryFilm, new GridBagConstraints(0, 3, 1, 1, 0.0, 0.0, 
 				GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 				new Insets(2,2,2,2), 0,0));
@@ -89,7 +89,7 @@ public class AddFilms {
 				GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 				new Insets(2,2,2,2), 0,0));
 		
-		JLabel yearsFilm = new JLabel("Рік випуску");
+		JLabel yearsFilm = new JLabel("Р С–Рє РІРёРїСѓСЃРєСѓ");
 		pan.add(yearsFilm, new GridBagConstraints(0, 4, 1, 1, 0.0, 0.0, 
 				GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 				new Insets(2,2,2,2), 0,0));
@@ -102,7 +102,7 @@ public class AddFilms {
 				GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 				new Insets(2,2,2,2), 0,0));
 		
-		JLabel linkOnlineFilm = new JLabel("Посилання на перегляд");
+		JLabel linkOnlineFilm = new JLabel("РџРѕСЃРёР»Р°РЅРЅСЏ РЅР° РїРµСЂРµРіР»СЏРґ");
 		pan.add(linkOnlineFilm, new GridBagConstraints(0, 5, 1, 1, 0.0, 0.0, 
 				GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 				new Insets(2,2,2,2), 0,0));
@@ -111,7 +111,7 @@ public class AddFilms {
 				GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 				new Insets(2,2,2,2), 0,0));
 		
-		JLabel linkOfflineFilm = new JLabel("Посилання на завантаження");
+		JLabel linkOfflineFilm = new JLabel("РџРѕСЃРёР»Р°РЅРЅСЏ РЅР° Р·Р°РІР°РЅС‚Р°Р¶РµРЅРЅСЏ");
 		pan.add(linkOfflineFilm, new GridBagConstraints(0, 6, 1, 1, 0.0, 0.0, 
 				GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 				new Insets(2,2,2,2), 0,0));
@@ -159,7 +159,7 @@ public class AddFilms {
 			}
 		});
 		
-		JButton ok = new JButton("Додати");
+		JButton ok = new JButton("Р”РѕРґР°С‚Рё");
 		pan.add(ok, new GridBagConstraints(0, 7, 1, 1, 0.0, 0.0, 
 				GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 				new Insets(2,2,2,2), 0,0));
@@ -216,7 +216,7 @@ public class AddFilms {
 			        	
 			        	int rows = preparedStatement.executeUpdate();
 			        	
-			        	JOptionPane.showMessageDialog(ok, "Дані записано!!!");
+			        	JOptionPane.showMessageDialog(ok, "Р”Р°РЅС– Р·Р°РїРёСЃР°РЅРѕ!!!");
 			        	new ChoiceMenu();
         				frame.setVisible(false);
 			        	
@@ -233,7 +233,7 @@ public class AddFilms {
 			}
 		});
 		
-		JButton exit = new JButton("Завершити");
+		JButton exit = new JButton("Р—Р°РІРµСЂС€РёС‚Рё");
 		pan.add(exit, new GridBagConstraints(1, 7, 1, 1, 0.0, 0.0, 
 				GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 				new Insets(2,2,2,2), 0,0));
