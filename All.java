@@ -28,7 +28,7 @@ public class All extends JFrame {
 
 	public All() {
 	
-		JFrame frame = new JFrame("FavouriteFilms Переглянути все") {};
+		JFrame frame = new JFrame("FavouriteFilms РџРµСЂРµРіР»СЏРЅСѓС‚Рё РІСЃРµ") {};
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		Font font = new Font("Verdana", Font.PLAIN, 11);
@@ -40,14 +40,14 @@ public class All extends JFrame {
 		pan.setLayout(new BorderLayout());
 		
 		JMenuBar menuBar = new JMenuBar();	
-		JMenu fileMenu = new JMenu("Файл");
+		JMenu fileMenu = new JMenu("Р¤Р°Р№Р»");
         fileMenu.setFont(font);
         
-        JMenuItem back = new JMenuItem("Назад");
+        JMenuItem back = new JMenuItem("РќР°Р·Р°Рґ");
         back.setFont(font);
         fileMenu.add(back);
          
-        JMenuItem sort = new JMenuItem("Сортувати за рейтингом додавання");
+        JMenuItem sort = new JMenuItem("РЎРѕСЂС‚СѓРІР°С‚Рё Р·Р° СЂРµР№С‚РёРЅРіРѕРј РґРѕРґР°РІР°РЅРЅСЏ");
         sort.setFont(font);
         fileMenu.add(sort);
 		
@@ -101,7 +101,7 @@ public class All extends JFrame {
                       String Years = resultSet.getString(6);
                       String LinkOnline = resultSet.getString(7);
                       String LinkOffline = resultSet.getString(8);
-                      String text = " "+NameFilms+" - "+Genre+", "+AlternativeGenre+" ("+Country+", "+Years+" рік), подивитись онлайн - "+LinkOnline+", завантажити - "+LinkOffline;
+                      String text = " "+NameFilms+" - "+Genre+", "+AlternativeGenre+" ("+Country+", "+Years+" СЂС–Рє), РїРѕРґРёРІРёС‚РёСЃСЊ РѕРЅР»Р°Р№РЅ - "+LinkOnline+", Р·Р°РІР°РЅС‚Р°Р¶РёС‚Рё - "+LinkOffline;
                       
                       JTextField films = new JTextField(text);
                       films.setEditable(false);
@@ -134,7 +134,7 @@ public class All extends JFrame {
 				
 			frame.setVisible(false);
 				
-				JFrame frame = new JFrame("FavouriteFilms Посортований Перегляд") {};
+				JFrame frame = new JFrame("FavouriteFilms РџРѕСЃРѕСЂС‚РѕРІР°РЅРёР№ РџРµСЂРµРіР»СЏРґ") {};
           		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
           		
           			Font font = new Font("Verdana", Font.PLAIN, 11);
@@ -147,7 +147,7 @@ public class All extends JFrame {
           		JMenu fileMenu = new JMenu("File");
                 fileMenu.setFont(font);
                   
-                JMenuItem back = new JMenuItem("Назад");
+                JMenuItem back = new JMenuItem("РќР°Р·Р°Рґ");
                 back.setFont(font);
                   fileMenu.add(back);
                   
@@ -195,7 +195,7 @@ public class All extends JFrame {
 		                   
 		            	   	 String NameFilms = resultSet.getString(1);
 		            	   	 String rate = resultSet.getString(2);
-		                     String text = " "+NameFilms+" - Кількість додавань: "+rate;
+		                     String text = " "+NameFilms+" - РљС–Р»СЊРєС–СЃС‚СЊ РґРѕРґР°РІР°РЅСЊ: "+rate;
 		                      
 		                     JTextField films = new JTextField(text);
 		                     films.setEditable(false);
