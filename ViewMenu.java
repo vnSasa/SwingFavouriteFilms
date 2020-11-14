@@ -42,9 +42,9 @@ import javax.swing.event.AncestorListener;
 
 public class ViewMenu {
 
-	String[] menuG = {"", "Анімація","Екшн","Бойовик","Драма","Мелодрама","Комедія","Жахи","Фантастика","Триллер","Детектив","Пригоди","Історичний","Документальний","Дитячий","Сімейний","Фентезі","Спорт","інший жанр"};
-	String[] countryM = {"","США", "Україна", "Росія","Англія","Австралія","Канада","Франція","Німеччина","Іспанія","Італія","Туреччина","Латинська Америка","Швеція","Фінляндія","Польща","Індія","Китай","Японія","інша країна"};
-	String[] yearsM = {"","раніше","1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990",
+	String[] menuG = {"", "РђРЅС–РјР°С†С–СЏ","Р•РєС€РЅ","Р‘РѕР№РѕРІРёРє","Р”СЂР°РјР°","РњРµР»РѕРґСЂР°РјР°","РљРѕРјРµРґС–СЏ","Р–Р°С…Рё","Р¤Р°РЅС‚Р°СЃС‚РёРєР°","РўСЂРёР»Р»РµСЂ","Р”РµС‚РµРєС‚РёРІ","РџСЂРёРіРѕРґРё","Р†СЃС‚РѕСЂРёС‡РЅРёР№","Р”РѕРєСѓРјРµРЅС‚Р°Р»СЊРЅРёР№","Р”РёС‚СЏС‡РёР№","РЎС–РјРµР№РЅРёР№","Р¤РµРЅС‚РµР·С–","РЎРїРѕСЂС‚","С–РЅС€РёР№ Р¶Р°РЅСЂ"};
+	String[] countryM = {"","РЎРЁРђ", "РЈРєСЂР°С—РЅР°", "Р РѕСЃС–СЏ","РђРЅРіР»С–СЏ","РђРІСЃС‚СЂР°Р»С–СЏ","РљР°РЅР°РґР°","Р¤СЂР°РЅС†С–СЏ","РќС–РјРµС‡С‡РёРЅР°","Р†СЃРїР°РЅС–СЏ","Р†С‚Р°Р»С–СЏ","РўСѓСЂРµС‡С‡РёРЅР°","Р›Р°С‚РёРЅСЃСЊРєР° РђРјРµСЂРёРєР°","РЁРІРµС†С–СЏ","Р¤С–РЅР»СЏРЅРґС–СЏ","РџРѕР»СЊС‰Р°","Р†РЅРґС–СЏ","РљРёС‚Р°Р№","РЇРїРѕРЅС–СЏ","С–РЅС€Р° РєСЂР°С—РЅР°"};
+	String[] yearsM = {"","СЂР°РЅС–С€Рµ","1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990",
 			"1991","1992","1993","1994","1995","1996","1997","1998","1999","2000",
 			"2001","2002","2003","2004","2005","2006","2007","2008","2009","2010",
 			"2011","2012","2013","2014","2015","2016","2017","2018","2019","2020"};
@@ -54,7 +54,7 @@ public class ViewMenu {
 	
 	public ViewMenu() {
 		
-		JFrame frame = new JFrame("FavouriteFilms Меню Перегляду") {};
+		JFrame frame = new JFrame("FavouriteFilms РњРµРЅСЋ РџРµСЂРµРіР»СЏРґСѓ") {};
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		Toolkit tool = Toolkit.getDefaultToolkit();
@@ -66,10 +66,10 @@ public class ViewMenu {
 		Font font = new Font("Verdana", Font.PLAIN, 11);
 		
 		JMenuBar menuBar = new JMenuBar();	
-		JMenu fileMenu = new JMenu("Повернутися");
+		JMenu fileMenu = new JMenu("РџРѕРІРµСЂРЅСѓС‚РёСЃСЏ");
         fileMenu.setFont(font);
         
-        JMenuItem back = new JMenuItem("Назад");
+        JMenuItem back = new JMenuItem("РќР°Р·Р°Рґ");
         back.setFont(font);
         fileMenu.add(back);
         
@@ -85,12 +85,12 @@ public class ViewMenu {
 			}
 		});
 		
-		JButton All = new JButton("Переглянути усю базу");
+		JButton All = new JButton("РџРµСЂРµРіР»СЏРЅСѓС‚Рё СѓСЃСЋ Р±Р°Р·Сѓ");
 		pan.add(All, new GridBagConstraints(0, 0, 1, 1, 0.0, 0.0, 
 				GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 				new Insets(2,2,2,2), 0,0));
 		
-		JButton config = new JButton("Додати фільтри");
+		JButton config = new JButton("Р”РѕРґР°С‚Рё С„С–Р»СЊС‚СЂРё");
 		pan.add(config, new GridBagConstraints(1, 0, 1, 1, 0.0, 0.0, 
 				GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 				new Insets(2,2,2,2), 0,0));
@@ -113,7 +113,7 @@ public class ViewMenu {
 			public void actionPerformed(ActionEvent e) {
 				
 				
-				JLabel nameFilm = new JLabel("Назва фільму");
+				JLabel nameFilm = new JLabel("РќР°Р·РІР° С„С–Р»СЊРјСѓ");
 				pan.add(nameFilm, new GridBagConstraints(0, 2, 1, 1, 0.0, 0.0, 
 						GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 						new Insets(2,2,2,2), 0,0));
@@ -123,7 +123,7 @@ public class ViewMenu {
 						GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 						new Insets(2,2,2,2), 0,0));
 				
-				JLabel genreFilm = new JLabel("Жанр фільму");
+				JLabel genreFilm = new JLabel("Р–Р°РЅСЂ С„С–Р»СЊРјСѓ");
 				pan.add(genreFilm, new GridBagConstraints(0, 3, 1, 1, 0.0, 0.0, 
 						GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 						new Insets(2,2,2,2), 0,0));
@@ -132,7 +132,7 @@ public class ViewMenu {
 						GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 						new Insets(2,2,2,2), 0,0));
 				
-				JLabel alterGenreFilm = new JLabel("Додатковий жанр фільму");
+				JLabel alterGenreFilm = new JLabel("Р”РѕРґР°С‚РєРѕРІРёР№ Р¶Р°РЅСЂ С„С–Р»СЊРјСѓ");
 				pan.add(alterGenreFilm, new GridBagConstraints(0, 4, 1, 1, 0.0, 0.0, 
 						GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 						new Insets(2,2,2,2), 0,0));
@@ -141,7 +141,7 @@ public class ViewMenu {
 						GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 						new Insets(2,2,2,2), 0,0));
 				
-				JLabel countryF = new JLabel("Країна виробник");
+				JLabel countryF = new JLabel("РљСЂР°С—РЅР° РІРёСЂРѕР±РЅРёРє");
 				pan.add(countryF, new GridBagConstraints(0, 5, 1, 1, 0.0, 0.0, 
 						GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 						new Insets(2,2,2,2), 0,0));
@@ -150,7 +150,7 @@ public class ViewMenu {
 						GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 						new Insets(2,2,2,2), 0,0));
 				
-				JLabel yearsF = new JLabel("Країна виробник");
+				JLabel yearsF = new JLabel("РљСЂР°С—РЅР° РІРёСЂРѕР±РЅРёРє");
 				pan.add(yearsF, new GridBagConstraints(0, 6, 1, 1, 0.0, 0.0, 
 						GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 						new Insets(2,2,2,2), 0,0));
@@ -179,7 +179,7 @@ public class ViewMenu {
 						GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 						new Insets(2,2,2,2), 0,0));
 				
-				JButton ok = new JButton("Підтвердити");
+				JButton ok = new JButton("РџС–РґС‚РІРµСЂРґРёС‚Рё");
 				pan.add(ok, new GridBagConstraints(1, 7, 1, 1, 0.0, 0.0, 
 						GridBagConstraints.WEST, GridBagConstraints.PAGE_START,
 						new Insets(2,2,2,2), 0,0));
@@ -252,7 +252,7 @@ public class ViewMenu {
 						JMenu fileMenu = new JMenu("File");
 				        fileMenu.setFont(font);
 				        
-				        JMenuItem back = new JMenuItem("Назад");
+				        JMenuItem back = new JMenuItem("РќР°Р·Р°Рґ");
 				        back.setFont(font);
 				        fileMenu.add(back);
 				        
@@ -304,7 +304,7 @@ public class ViewMenu {
 				                      String Years = resultSet.getString(6);
 				                      String LinkOnline = resultSet.getString(7);
 				                      String LinkOffline = resultSet.getString(8);
-				                      String text = " "+NameFilms+" - "+Genre+", "+AlternativeGenre+" ("+Country+", "+Years+" рік), подивитись онлайн - "+LinkOnline+", завантажити - "+LinkOffline;
+				                      String text = " "+NameFilms+" - "+Genre+", "+AlternativeGenre+" ("+Country+", "+Years+" СЂС–Рє), РїРѕРґРёРІРёС‚РёСЃСЊ РѕРЅР»Р°Р№РЅ - "+LinkOnline+", Р·Р°РІР°РЅС‚Р°Р¶РёС‚Рё - "+LinkOffline;
 				                      
 				                      JTextField films = new JTextField(text);
 				                      films.setEditable(false);
