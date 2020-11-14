@@ -27,12 +27,12 @@ public class Registration {
 		Toolkit tool = Toolkit.getDefaultToolkit();
 		Dimension dim = tool.getScreenSize();
 		frame.setBounds(dim.width/2 - 250, dim.height/2 - 150, 500, 300);
-		frame.setTitle("Реєстрація");
+		frame.setTitle("Р РµС”СЃС‚СЂР°С†С–СЏ");
 		JPanel pan = new JPanel();
 		frame.add(pan);
 		pan.setLayout(new GridBagLayout());
 		
-		JLabel log = new JLabel("ЛОГІН:");
+		JLabel log = new JLabel("Р›РћР“Р†Рќ:");
 		pan.add(log, new GridBagConstraints(0, 0, 1, 1, 0.0, 0.0, 
 				GridBagConstraints.NORTH, GridBagConstraints.HORIZONTAL,
 				new Insets(1,2,3,4), 0,0));
@@ -40,7 +40,7 @@ public class Registration {
 		pan.add(name, new GridBagConstraints(1, 0, 1, 1, 0.0, 0.0, 
 				GridBagConstraints.NORTH, GridBagConstraints.HORIZONTAL,
 				new Insets(1,2,3,4), 0,0));
-		JLabel pass = new JLabel("ПАРОЛЬ:");
+		JLabel pass = new JLabel("РџРђР РћР›Р¬:");
 		pan.add(pass, new GridBagConstraints(0, 1, 1, 1, 0.0, 0.0, 
 				GridBagConstraints.NORTH, GridBagConstraints.HORIZONTAL,
 				new Insets(1,2,3,4), 0,0));
@@ -48,7 +48,7 @@ public class Registration {
 		pan.add(passwordKey, new GridBagConstraints(1, 1, 1, 1, 0.0, 0.0, 
 				GridBagConstraints.NORTH, GridBagConstraints.HORIZONTAL,
 				new Insets(1,2,3,4), 0,0));
-		JButton but2 = new JButton("Зареєструватися");
+		JButton but2 = new JButton("Р—Р°СЂРµС”СЃС‚СЂСѓРІР°С‚РёСЃСЏ");
 		pan.add(but2, new GridBagConstraints(0, 2, 1, 1, 0.0, 0.0, 
 				GridBagConstraints.NORTH, GridBagConstraints.HORIZONTAL,
 				new Insets(1,2,3,4), 0,0));
@@ -90,7 +90,7 @@ public class Registration {
 			        	
 			        	int rows = preparedStatement.executeUpdate();
 			       	        	
-			        	JOptionPane.showMessageDialog(but2, "Реєстрація пройшла успішно!!!");
+			        	JOptionPane.showMessageDialog(but2, "Р РµС”СЃС‚СЂР°С†С–СЏ РїСЂРѕР№С€Р»Р° СѓСЃРїС–С€РЅРѕ!!!");
         				frame.setVisible(false);
 			          
 			        }
