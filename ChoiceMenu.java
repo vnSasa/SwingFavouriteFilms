@@ -23,40 +23,40 @@ public class ChoiceMenu {
 		Toolkit tool = Toolkit.getDefaultToolkit();
 		Dimension dim = tool.getScreenSize();
 		frame.setBounds(dim.width/2 - 250, dim.height/2 - 150, 500, 300);
-		frame.setTitle("FavouriteFilms Меню");
+		frame.setTitle("FavouriteFilms РњРµРЅСЋ");
 		JPanel pan = new JPanel();
 		frame.add(pan);
 		pan.setLayout(new GridBagLayout());
 		Font font = new Font("Segoe UI semibold", Font.PLAIN, 20);
 		Font font1 = new Font("Segoe", Font.PLAIN, 13);
 		
-		JLabel tex = new JLabel("FavouriteFilms вітає вас!!!");
+		JLabel tex = new JLabel("FavouriteFilms РІС–С‚Р°С” РІР°СЃ!!!");
 		pan.add(tex, new GridBagConstraints(0, 0, 3, 1, 0.0, 0.0, 
 				GridBagConstraints.CENTER, GridBagConstraints.PAGE_START,
 				new Insets(2,2,2,2), 0,0));
 		tex.setFont(font);
 		
-		JLabel tex1 = new JLabel("Тут ви можете переглядати списки фільмів"); 
+		JLabel tex1 = new JLabel("РўСѓС‚ РІРё РјРѕР¶РµС‚Рµ РїРµСЂРµРіР»СЏРґР°С‚Рё СЃРїРёСЃРєРё С„С–Р»СЊРјС–РІ"); 
 		pan.add(tex1, new GridBagConstraints(0, 1, 3, 1, 0.0, 0.0, 
 				GridBagConstraints.CENTER, GridBagConstraints.PAGE_START,
 				new Insets(2,2,2,2), 0,0));
 		tex1.setFont(font1);
-		JButton watch = new JButton("Переглядати");
+		JButton watch = new JButton("РџРµСЂРµРіР»СЏРґР°С‚Рё");
 		pan.add(watch, new GridBagConstraints(2, 2, 1, 1, 0.0, 0.0, 
 				GridBagConstraints.CENTER, GridBagConstraints.PAGE_START,
 				new Insets(2,2,2,2), 0,0));
 		
-		JLabel tex2	= new JLabel("Або додавати в базу нові дані про свої улюблені фільми"); 
+		JLabel tex2	= new JLabel("РђР±Рѕ РґРѕРґР°РІР°С‚Рё РІ Р±Р°Р·Сѓ РЅРѕРІС– РґР°РЅС– РїСЂРѕ СЃРІРѕС— СѓР»СЋР±Р»РµРЅС– С„С–Р»СЊРјРё"); 
 		pan.add(tex2, new GridBagConstraints(0, 3, 3, 1, 0.0, 0.0, 
 				GridBagConstraints.CENTER, GridBagConstraints.PAGE_START,
 				new Insets(2,2,2,2), 0,0));
 		tex2.setFont(font1);
-		JButton add = new JButton("Додавати");
+		JButton add = new JButton("Р”РѕРґР°РІР°С‚Рё");
 		pan.add(add, new GridBagConstraints(2, 4, 1, 1, 0.0, 0.0, 
 				GridBagConstraints.CENTER, GridBagConstraints.PAGE_START,
 				new Insets(1,2,3,4), 0,0));
 		
-		JLabel tex3 = new JLabel("Допоможіть іншим знайти хороше кіно");		 
+		JLabel tex3 = new JLabel("Р”РѕРїРѕРјРѕР¶С–С‚СЊ С–РЅС€РёРј Р·РЅР°Р№С‚Рё С…РѕСЂРѕС€Рµ РєС–РЅРѕ");		 
 		pan.add(tex3, new GridBagConstraints(0, 5, 3, 1, 0.0, 0.0, 
 				GridBagConstraints.CENTER, GridBagConstraints.PAGE_START,
 				new Insets(2,2,2,2), 0,0));	
